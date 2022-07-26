@@ -11,6 +11,8 @@ If you pass a `date` - the `timestamp` unix in the parameter, it will return a r
 ```js
 const { Client, MessageEmbed, Intents } = require('discord.js');
 
+const colorFromDuration = require('./src/index');
+
 const client = new Client({
   intent: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MEMBERS],
 });
@@ -30,6 +32,8 @@ client.on('guildMemberAdd', (member) => {
 ```js
 import { Client, type APIEmbed, Intents, type GuildMember } from 'discord.js';
 
+import { colorFromDuration } from './src/index';
+ 
 const client = new Client({
   intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MEMBERS],
 });
