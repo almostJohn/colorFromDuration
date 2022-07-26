@@ -20,7 +20,7 @@ client.on('guildMemberAdd', (member) => {
     .setColor(colorFromDuration(Date.now() - member.user.createdTimestamp))
     .setTitle('Example embed title')
     .setDescription('Example embed description')
-    .setFooter('Example embed footer')
+    .setFooter({ text: 'Example footer text' })
     .setTimestamp();
 });
 ```
