@@ -45,4 +45,6 @@ client.on('guildMemberAdd', (member: GuildMember) => {
 });
 ```
 
+#### Resulting Code
+
 As you can see here, we pass in the paramater, `Date.now()` and substracting to `member.user.createdTimestamp`.
