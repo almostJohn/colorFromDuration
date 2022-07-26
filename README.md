@@ -2,7 +2,7 @@
 
 #### Functionality
 
-If you pass a `date + timestamp` unix in the parameter, it will return a random color based on duration. This usually works perfectly fine when creating a discord bot for `MessageEmbed` | `APIEmbed` | `APIWebhookEmbed`
+If you pass a `date` - the `timestamp` unix in the parameter, it will return a random color based on duration. This usually works perfectly fine when creating a discord bot for `MessageEmbed` | `APIEmbed` | `APIWebhookEmbed`
 
 #### Example Usage
 
@@ -44,3 +44,5 @@ client.on('guildMemberAdd', (member: GuildMember) => {
   };
 });
 ```
+
+As you can see here, we pass in the paramater, `Date.now()` and substracting to `member.user.createdTimestamp`.
