@@ -1,6 +1,6 @@
 const MAX_TRUST_ACCOUNT_AGE = 1000 * 60 * 60 * 24 * 7 * 4;
 
-function colorFromDuration(duration: number) {
+export function colorFromDuration(duration: number) {
 	const percent = Math.min(duration / (MAX_TRUST_ACCOUNT_AGE / 100), 100);
 	let r: number;
 	let g: number;
