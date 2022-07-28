@@ -1,5 +1,7 @@
 ### Color From Duration
 
+Color from duration returns a number that can turn into a color code for discord.js, `MessageEmbed`, `APIEmbed`, and `APIWebhookEmbed`.
+
 #### Functionality
 
 If you pass a `date` - the `timestamp` unix in the parameter, it will return a random color based on duration. This usually works perfectly fine when creating a discord bot for `MessageEmbed` | `APIEmbed` | `APIWebhookEmbed`
