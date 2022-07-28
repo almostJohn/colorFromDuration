@@ -51,4 +51,4 @@ client.on('guildMemberAdd', (member: GuildMember) => {
 
 #### Resulting Code
 
-As you can see here, we use a powerful library [discord.js](http://discord.js.org/) of [Node.js](https://nodejs.org/en/), you'll see that we pass in the paramater, of `colorFromDuration()` function `Date.now()` and substracting to `member.user.createdTimestamp`.
+As you can see here, we use a powerful library [discord.js](http://discord.js.org/) of [Node.js](https://nodejs.org/en/), you'll see that we pass in the paramater, of `colorFromDuration()` function `Date.now()` and subtracting to `member.user.createdTimestamp`.
