@@ -15,5 +15,5 @@ Resolves a duration into a color number.
 ### Example Usage
 
 ```js
-console.log(colorFromDuration(Date.now() - 1588857987));
+console.log(colorFromDuration(Date.now() - 1588857987)); // -> 5046092.5
 ```
