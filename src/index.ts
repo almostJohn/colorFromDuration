@@ -1,24 +1,24 @@
-const MAX_TRUST_ACCOUNT_AGE = 1000 * 60 * 60 * 24 * 7 * 4;
+const MAX_TRUST_ACCOUNT_AGE = 1_000 * 60 * 60 * 24 * 7 * 4;
 
 export function colorFromDuration(duration: number) {
 	const percent = Math.min(duration / (MAX_TRUST_ACCOUNT_AGE / 100), 100);
-	let r: number;
-	let g: number;
-	let b = 0;
+	let red: number;
+	let green: number;
+	let blue = 0;
 
 	if (percent < 50) {
-		r = 255;
-		g = Math.round(5.1 * percent);
+		red = 255;
+		green = Math.round(5.1 * percent);
 	} else {
-		g = 255;
-		r = Math.round(510 - 5.1 * percent);
+		green = 255;
+		red = Math.round(510 - 5.1 * percent);
 	}
 									 
 	const tintFactor = 0.3;
 									 
-	r += (255 - r) * tintFactor;
-	g += (255 - g) * tintFactor;
-	b += (255 - b) * tintFactor;
+	red += (255 - red) * tintFactor;
+	green += (255 - green) * tintFactor;
+	blue += (255 - blue) * tintFactor;
 									 
-	return (r << 16) + (g << 8) + b;
+	return (red << 16) + (green << 8) + blue;
 }
